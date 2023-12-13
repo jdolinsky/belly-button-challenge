@@ -25,6 +25,7 @@ function buildTop10(d) {
 function displayInfo(d) {
     console.info("Building demographic info")
     let ul = d3.select("#ul-metadata")
+    ul.selectAll("li").remove()
     for (key in d) {
         ul.append('li').text(`${key}: ${d[key]}`)
     }
