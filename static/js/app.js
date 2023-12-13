@@ -90,6 +90,7 @@ d3.json("https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1
         .attr("value", function(d) {
             return d.values;
         });
-
+    //select the first id in the list
+    optionChanged(data.names[0])
 });
 
